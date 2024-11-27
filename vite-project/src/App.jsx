@@ -79,7 +79,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-10 my-5 rounded-xl bg-violet-100 p-5 min-h-[80vh]">
+      <div className="container  mx-10 my-2 rounded-xl bg-violet-100 p-5 min-h-[80vh]">
         <div className="flex gap-10 items-center">
           <div className="text-xl font-bold">To-Do App</div>
           <button
