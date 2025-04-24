@@ -6,6 +6,8 @@ function App() {
   const [lists, setLists] = useState([{ id: 1, todos: [] }]); // Array of lists with to-dos
   const [activeListId, setActiveListId] = useState(1); // ID of the currently active list
 
+  // using state management of components to to a make a website
+
   const handleAdd = () => {
     if (todo.trim() === "") return; // Prevent adding empty todos
     setLists((prevLists) =>
