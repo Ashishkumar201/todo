@@ -9,6 +9,7 @@ export const Navbar = () => {
         <ul className="flex gap-8 mx-9">
             <li className='cursor-pointer  hover:text-blue-500 transition-all'>Home</li>
             <li className='cursor-pointer  hover:text-blue-500 transition-all'> Your Tasks</li>
+            {/* <li className='cursoropointer hover:text-blue-500 transition-all'>About the app</li> */}
         </ul>
     </nav>
   )
