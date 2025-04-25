@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "./components/Navbar";
 
-
-
 function App() {
   const [todo, setTodo] = useState(""); // Current input value for a to-do
   const [lists, setLists] = useState([{ id: 1, todos: [] }]); // Array of lists with to-dos
