@@ -43,11 +43,11 @@ function App() {
     handleDeleteTodo(listId, index); // Remove the item from the list to allow editing
   };
 
-  // const handleAddList = () => {
-  //   const newId = lists.length > 0 ? Math.max(...lists.map((list) => list.id)) + 1 : 1;
-  //   setLists([...lists, { id: newId, todos: [] }]);
-  //   setActiveListId(newId); // Set the newly created list as active
-  // };
+  const handleAddList = () => {
+    const newId = lists.length > 0 ? Math.max(...lists.map((list) => list.id)) + 1 : 1;
+    setLists([...lists, { id: newId, todos: [] }]);
+    setActiveListId(newId); // Set the newly created list as active
+  };
 
   const handleSwitchList = (listId) => {
     setActiveListId(listId); // Switch to the selected list
@@ -86,12 +86,12 @@ function App() {
       <div className="container  mx-10 my-2 rounded-xl bg-violet-100 p-5 min-h-[80vh]">
         <div className="flex gap-10 items-center">
           <div className="text-xl font-bold">To-Do App</div>
-          {/* <button
+          <button
             className="p-3 py-1 bg-violet-800 hover:bg-violet-950 text-white rounded-md"
             onClick={handleAddList}
           >
             Add a List
-          </button> */}
+          </button>
         </div>
 
         <div className="my-5">
