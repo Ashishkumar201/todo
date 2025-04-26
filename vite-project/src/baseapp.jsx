@@ -119,7 +119,7 @@ function App() {
         {activeListId && (
           <>
             <div className="text-xl font-bold my-3">
-              Add a todo to List {activeListId}
+              Add a todo to L ist {activeListId}
             </div>
             <input
               onChange={handleChange}
